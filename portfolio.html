@@ -1,0 +1,408 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Phumudzo OS // Developer Portfolio</title>
+    <meta
+      name="description"
+      content="Phumudzo Manenzhe — Computer Science student and developer portfolio."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="portfolio.css" />
+  </head>
+  <body>
+    <div class="boot" id="boot">
+      <div class="boot-inner">
+        <div class="boot-head">
+          <span>PHUMUDZO BIOS // PORTFOLIO-OS</span><span id="bootPct">0%</span>
+        </div>
+        <div class="boot-log" id="bootLog"></div>
+        <div class="boot-bar"><span id="bootBar"></span></div>
+        <div class="boot-foot">
+          <span>initialising developer environment…</span
+          ><span>[ press any key to skip ]</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Welcome Popup -->
+    <div id="welcomePopup" class="welcome-overlay">
+      <div class="welcome-popup">
+        <button class="welcome-close" onclick="closeWelcome()">×</button>
+
+        <div class="welcome-header">
+          <span class="status-dot"></span>
+          <span>SYSTEM MESSAGE</span>
+        </div>
+
+        <div class="welcome-icon">></div>
+
+        <h2>WELCOME, VISITOR.</h2>
+
+        <p>
+          Portfolio-OS is now online. Explore the system and discover my work,
+          skills, and projects.
+        </p>
+
+        <div class="welcome-footer">
+          <span>ACCESS GRANTED</span>
+
+          <button onclick="closeWelcome()">ENTER SYSTEM →</button>
+        </div>
+      </div>
+    </div>
+    <div class="app">
+      <div class="shell">
+        <header class="header">
+          <div class="traffic">
+            <i class="r"></i><i class="a"></i><i class="g"></i>
+          </div>
+          <div class="header-path">
+            <strong>phumudzo@portfolio</strong>
+          </div>
+          <div class="nav">
+            <button onclick="go('about')">[ about ]</button
+            ><button onclick="go('projects')">[ projects ]</button
+            ><button onclick="go('skills')">[ stack ]</button
+            ><button onclick="openTerminal()">[ terminal ]</button>
+          </div>
+        </header>
+        <section class="hero">
+          <div class="hero-left">
+            <div class="eyebrow">
+              <span>BOOT_USER:</span> PHUMUDZO.MANENZHE // <b>ONLINE</b>
+            </div>
+            <h1>BUILD.<br /><em>BREAK.</em><br />REBUILD.</h1>
+            <p class="hero-copy">
+              Computer Science student at the University of Witwatersrand
+              building practical software across web, databases, mobile and
+              intelligent systems. I like taking a problem, understanding the
+              system behind it, and shipping a solution that actually works.
+            </p>
+            <div class="hero-actions">
+              <a class="btn" href="#projects">[ explore projects ]</a
+              ><a
+                class="btn secondary"
+                href="mailto:manenzhephumudzo657@gmail.com"
+                >[ contact me ]</a
+              ><button class="btn secondary" onclick="openTerminal()">
+                [ launch shell ]
+              </button>
+            </div>
+          </div>
+          <aside class="hero-right">
+            <div class="sys-top">
+              <span>SYSTEM CORE</span><span class="live">● RUNNING</span>
+            </div>
+            <div class="core">
+              <div class="core-ring">
+                <div class="core-photo">
+                  <img src="profile.jpeg" alt="Phumudzo Manenzhe" />
+                </div>
+              </div>
+            </div>
+            <div class="sys-stats">
+              <div><small>ROLE</small><b>CS STUDENT</b></div>
+              <div><small>LOCATION</small><b>JOHANNESBURG, SA</b></div>
+              <div><small>EDUCATION</small><b>WITS</b></div>
+              <div><small>MODE</small><b>BUILD / LEARN</b></div>
+            </div>
+          </aside>
+        </section>
+        <div class="workspace">
+          <aside class="sidebar">
+            <div class="side-head">FILE SYSTEM</div>
+            <button class="side-item active" onclick="go('about')">
+              <span>/home/about</span><small>01</small></button
+            ><button class="side-item" onclick="go('projects')">
+              <span>/projects</span><small>02</small></button
+            ><button class="side-item" onclick="go('skills')">
+              <span>/skills</span><small>03</small></button
+            ><button class="side-item" onclick="go('contact')">
+              <span>/contact</span><small>04</small>
+            </button>
+            <div class="mini-cmd">
+              Tip: press <b>1–4</b> to switch sections or <b>T</b> to open the
+              shell.
+            </div>
+          </aside>
+          <main class="content">
+            <section class="section" id="about">
+              <div class="section-head"><strong>01</strong> /about <i></i></div>
+              <div class="panel">
+                <div class="panel-head">
+                  <span class="title">/home/phumudzo/about.json</span
+                  ><span class="badge">READ_ONLY</span>
+                </div>
+                <div class="panel-body about">
+                  <div class="code">
+                    <div>
+                      <span class="key">name</span>:
+                      <span class="val">"Manenzhe Phumudzo"</span>,
+                    </div>
+                    <div>
+                      <span class="key">education</span>:
+                      <span class="val"
+                        >"BSc Computer Science — University of
+                        Witwatersrand"</span
+                      >,
+                    </div>
+                    <div>
+                      <span class="key">status</span>:
+                      <span class="val">"Currently studying"</span>,
+                    </div>
+                    <div>
+                      <span class="key">location</span>:
+                      <span class="val">"Johannesburg, South Africa"</span>,
+                    </div>
+                    <div>
+                      <span class="key">strengths</span>:
+                      <span class="val"
+                        >["collaborative", "problem-solving",
+                        "communication"]</span
+                      >
+                    </div>
+                  </div>
+                  <div>
+                    <div class="comment">// relevant coursework</div>
+                    <div class="chips" style="margin-top: 12px">
+                      <span class="chip">Data Structures & Algorithms</span
+                      ><span class="chip">Parallel Computing</span
+                      ><span class="chip">Mobile Computing</span
+                      ><span class="chip">Software Design</span
+                      ><span class="chip">Database Fundamentals</span
+                      ><span class="chip"
+                        >Computer Graphics & Visualization</span
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <section class="section" id="projects">
+              <div class="section-head">
+                <strong>02</strong> /projects <i></i>
+              </div>
+              <div class="projects">
+                <article class="project">
+                  <div class="project-meta">
+                    <span>PROC_001</span><span>PLATFORM</span>
+                  </div>
+                  <h3>Opportunet</h3>
+                  <p>
+                    A web-based platform connecting work-seekers with
+                    learnerships and skill-development opportunities,
+                    streamlining applications and tracking for applicants and
+                    providers.
+                  </p>
+                  <div class="stack">
+                    WEB PLATFORM · APPLICATION FLOW · TRACKING
+                  </div>
+                  <a
+                    href="https://github.com/PhumudzoManenzhe/OportuNet"
+                    target="_blank"
+                    rel="noopener"
+                    >open repository →</a
+                  >
+                </article>
+                <article class="project">
+                  <div class="project-meta">
+                    <span>PROC_002</span><span>FINTECH</span>
+                  </div>
+                  <h3>StokvelSA</h3>
+                  <p>
+                    A stokvel management platform for member contributions,
+                    payment schedules, communication and financial insights for
+                    savings groups.
+                  </p>
+                  <div class="stack">
+                    WEB APP · DATABASE · FINANCIAL INSIGHTS
+                  </div>
+                  <a
+                    href="https://github.com/PhumudzoManenzhe/StokvelSA"
+                    target="_blank"
+                    rel="noopener"
+                    >open repository →</a
+                  >
+                </article>
+                <article class="project">
+                  <div class="project-meta">
+                    <span>PROC_003</span><span>AI SYSTEM</span>
+                  </div>
+                  <h3>AI Snake Agent</h3>
+                  <p>
+                    A Java-based Wits AI competition agent using A* pathfinding,
+                    board analysis and collision prediction, with adaptive and
+                    attack modes that respond to risk and opponents.
+                  </p>
+                  <div class="stack">JAVA · A* PATHFINDING · GAME AI</div>
+                  <a
+                    href="https://github.com/PhumudzoManenzhe/AI-Snake-Agent-WITS-AI-competition-"
+                    target="_blank"
+                    rel="noopener"
+                    >open repository →</a
+                  >
+                </article>
+              </div>
+            </section>
+            <section class="section" id="skills">
+              <div class="section-head"><strong>03</strong> /stack <i></i></div>
+              <div class="panel">
+                <div class="panel-head">
+                  <span class="title">/etc/developer-stack.conf</span
+                  ><span class="badge">LOADED</span>
+                </div>
+                <div class="panel-body">
+                  <div class="skill-grid">
+                    <div class="skill">
+                      <div class="skill-top">
+                        <span>JavaScript</span><span>LANG</span>
+                      </div>
+                      <div class="meter"><i style="--w: 90%"></i></div>
+                    </div>
+                    <div class="skill">
+                      <div class="skill-top">
+                        <span>Python</span><span>LANG</span>
+                      </div>
+                      <div class="meter"><i style="--w: 88%"></i></div>
+                    </div>
+                    <div class="skill">
+                      <div class="skill-top">
+                        <span>Java</span><span>LANG</span>
+                      </div>
+                      <div class="meter"><i style="--w: 86%"></i></div>
+                    </div>
+                    <div class="skill">
+                      <div class="skill-top">
+                        <span>C / C++</span><span>LANG</span>
+                      </div>
+                      <div class="meter"><i style="--w: 76%"></i></div>
+                    </div>
+                    <div class="skill">
+                      <div class="skill-top">
+                        <span>React / Next.js</span><span>WEB</span>
+                      </div>
+                      <div class="meter"><i style="--w: 84%"></i></div>
+                    </div>
+                    <div class="skill">
+                      <div class="skill-top">
+                        <span>Node.js / Express</span><span>BACKEND</span>
+                      </div>
+                      <div class="meter"><i style="--w: 83%"></i></div>
+                    </div>
+                    <div class="skill">
+                      <div class="skill-top">
+                        <span>SQL / MySQL / PostgreSQL</span><span>DATA</span>
+                      </div>
+                      <div class="meter"><i style="--w: 81%"></i></div>
+                    </div>
+                    <div class="skill">
+                      <div class="skill-top">
+                        <span>Git / Linux / CI/CD</span><span>TOOLS</span>
+                      </div>
+                      <div class="meter"><i style="--w: 79%"></i></div>
+                    </div>
+                  </div>
+                  <div class="chips" style="margin-top: 15px">
+                    <span class="chip">REST APIs</span
+                    ><span class="chip">Supabase</span
+                    ><span class="chip">Firebase</span
+                    ><span class="chip">Neon</span
+                    ><span class="chip">MongoDB</span
+                    ><span class="chip">Jest</span
+                    ><span class="chip">Android Studio</span
+                    ><span class="chip">Vercel</span
+                    ><span class="chip">Render</span
+                    ><span class="chip">Agile</span
+                    ><span class="chip">TDD</span>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <section class="section" id="contact">
+              <div class="section-head">
+                <strong>04</strong> /contact <i></i>
+              </div>
+              <div class="contact">
+                <div class="contact-box">
+                  <div class="comment">// establish_connection()</div>
+                  <h3>Open a channel.</h3>
+                  <div class="contact-row">
+                    <label>EMAIL</label
+                    ><a href="mailto:manenzhephumudzo657@gmail.com"
+                      >manenzhephumudzo657@gmail.com</a
+                    >
+                  </div>
+                  <div class="contact-row">
+                    <label>GITHUB</label
+                    ><a
+                      href="https://github.com/PhumudzoManenzhe"
+                      target="_blank"
+                      rel="noopener"
+                      >github.com/PhumudzoManenzhe</a
+                    >
+                  </div>
+
+                  <div class="contact-row">
+                    <label>LINKEDIN</label
+                    ><a
+                      href="https://www.linkedin.com/in/phumudzo-madimabe-manenzhe/"
+                      target="_blank"
+                      rel="noopener"
+                      >www.linkedin.com/in/phumudzo-madimabe-manenzhe</a
+                    >
+                  </div>
+
+                  <div class="contact-row">
+                    <label>PHONE</label><span>+27 68 313 9841</span>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </main>
+        </div>
+        <footer>
+          <span>PHUMUDZO-OS // build 2026.09</span
+          ><span>Designed & coded by Phumudzo Manenzhe</span>
+        </footer>
+      </div>
+    </div>
+    <div class="dock">
+      <span><b>▣ PORTFOLIO-OS</b></span
+      ><span>|</span><span>STATUS: <b>ONLINE</b></span
+      ><span class="spacer"></span
+      ><button onclick="openTerminal()">[ T ] TERMINAL</button
+      ><span id="clock"></span>
+    </div>
+    <div class="toast" id="toast"></div>
+    <div class="modal" id="termModal">
+      <div class="terminal">
+        <div class="terminal-head">
+          <b>phumudzo@portfolio:~$ shell</b
+          ><button onclick="closeTerminal()">[ ESC / CLOSE ]</button>
+        </div>
+        <div class="terminal-body" id="termBody">
+          <div style="color: var(--green)">PORTFOLIO-OS shell v1.0</div>
+          <div style="color: var(--muted)">
+            Type <b style="color: var(--cyan)">help</b> for commands.
+          </div>
+          <div class="promptline">
+            <span>guest@portfolio:~$</span
+            ><input
+              id="termInput"
+              autocomplete="off"
+              aria-label="Terminal command"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="portfolio.js"></script>
+  </body>
+</html>
