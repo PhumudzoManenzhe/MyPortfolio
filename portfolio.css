@@ -415,13 +415,20 @@ body:after {
   grid-template-columns: minmax(0, 1.6fr) minmax(300px, 0.7fr);
   gap: 16px;
   margin-top: 28px;
+  align-items: start;
 }
+
 .hero-left,
 .hero-right,
 .panel {
   border: 1px solid var(--line);
   background: linear-gradient(180deg, #071014dd, #050a0ddd);
   box-shadow: var(--shadow);
+}
+.hero-right {
+  align-self: start;
+  position: sticky;
+  top: 100px;
 }
 .hero-left {
   padding: clamp(26px, 5vw, 64px);
@@ -513,8 +520,8 @@ h1 em {
 }
 
 .core-ring {
-  width: 280px;
-  height: 280px;
+  width: 250px;
+  height: 250px;
   border: 1px solid #54ff9650;
   border-radius: 50%;
   display: grid;
@@ -587,12 +594,38 @@ h1 em {
     transform: rotate(360deg);
   }
 }
+
+.profile-name {
+  position: absolute;
+
+  top: 265px;
+  left: 50%;
+  transform: translateX(-50%);
+
+  width: max-content;
+
+  font-family: var(--mono);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 3px;
+
+  color: var(--green);
+
+  text-transform: uppercase;
+
+  text-shadow:
+    0 0 8px #54ff9650,
+    0 0 18px #54ff9620;
+
+  white-space: nowrap;
+}
+
 .sys-stats {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  border-top: 1px solid var(--line);
-  padding-top: 15px;
-  gap: 14px;
+  border-top: 2px solid var(--line);
+  padding-top: 50px;
+  gap: 20px;
 }
 .sys-stats small {
   display: block;

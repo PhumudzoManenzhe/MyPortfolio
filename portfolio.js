@@ -38,6 +38,9 @@ function closeWelcome() {
 
   setTimeout(() => {
     welcome.style.display = "none";
+
+    // Start About typing
+    typeAboutSection();
   }, 450);
 }
 
