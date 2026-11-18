@@ -151,10 +151,11 @@ Then open <http://127.0.0.1:5181>.
 
 ## Re-capturing the media
 
-The screenshots and the tour video come from `_media-capture/portfolio.mjs`, a Playwright script that drives the site the way a visitor does — skipping boot, dismissing the welcome dialog, scrolling the about chapters, opening the Olympiad gallery, navigating to `/stack` *while that gallery is open*, and running four shell commands. It then reopens the page at 390×844 and asserts the phone layout: no sidebar, exactly four bar links, the name clear of the stats, and no horizontal overflow.
+The screenshots and the tour video come from a Playwright harness that is not shipped with this repository — it lives one directory up, in `_media-capture/`, and is shared with the other project documentation in this portfolio. It drives the site the way a visitor does — skipping boot, dismissing the welcome dialog, scrolling the about chapters, opening the Olympiad gallery, navigating to `/stack` *while that gallery is open*, and running four shell commands. It then reopens the page at 390×844 and asserts the phone layout: no sidebar, exactly four bar links, the name clear of the stats, and no horizontal overflow.
+
+From that directory:
 
 ```bash
-cd _media-capture
 node portfolio.mjs           # 11 screenshots + portfolio-tour.webm
 node gifs.mjs portfolio-tour # portfolio-tour.mp4 + portfolio-tour.gif
 node check-galleries.mjs     # smoke test: all four galleries open, load, and close

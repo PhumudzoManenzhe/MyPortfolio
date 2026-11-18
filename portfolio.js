@@ -254,7 +254,7 @@ const PROJECT_GALLERIES = {
   olympiad: {
     title: "OLYMPIAD PORTAL",
     subtitle: "PROC_001 · group project · React · Express · Prisma · Supabase",
-    repo: "https://github.com/PhumudzoManenzhe/OlympiadPortal",
+    repo: "https://github.com/mavhila-mashudu/OlympiadPortal_2.0",
     shots: [
       {
         src: "assets/showcase/projects/olympiad/01-organiser-dashboard.png",
@@ -308,7 +308,7 @@ const PROJECT_GALLERIES = {
   reposcope: {
     title: "REPOSCOPE",
     subtitle: "PROC_003 · individual · Python · FastAPI · SQLite WAL",
-    repo: "https://github.com/PhumudzoManenzhe/Repo-Analysis-Tool",
+    repo: "https://github.com/PhumudzoManenzhe/-Repo-Analysis-Tool",
     shots: [
       {
         src: "assets/showcase/projects/reposcope/01-overview.png",
