@@ -914,18 +914,6 @@ h1 em {
 .project-links button:hover {
   text-decoration: underline;
 }
-.project--wip {
-  grid-column: 1 / -1;
-  min-height: 0;
-  opacity: 0.72;
-}
-.project--wip h3 {
-  color: var(--muted);
-}
-.project--wip p {
-  max-width: 78ch;
-  flex: 0 0 auto;
-}
 .gallery-modal {
   position: fixed;
   inset: 0;

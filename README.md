@@ -90,7 +90,7 @@ Each card opens a gallery of screenshots captured from that project running for 
 | **OportuNet** | 4 screens | Live Firebase project with a seeded demo dataset |
 | **RepoScope** | 4 screens | Real ingestion of a 177-commit repository from a local path |
 | **AI Snake Agent** | 3 screens | Match replay rendered from a trace the agent produced |
-| **StokvelSA** | — | In progress; the card is explicit about it rather than showing placeholder work |
+| **StokvelSA** | 4 screens | Live React app over the Express API, signed in as a seeded Supabase account |
 
 Every gallery image links to its full-resolution capture, so a reviewer can inspect a dashboard at 1600×1000 instead of trusting a thumbnail.
 

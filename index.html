@@ -518,19 +518,34 @@
                     </button>
                   </div>
                 </article>
-                <article class="project project--wip">
+                <article class="project">
+                  <button
+                    class="project-shot"
+                    type="button"
+                    onclick="openGallery('stokvel')"
+                    aria-label="Open the StokvelSA case study"
+                  >
+                    <img
+                      src="assets/showcase/projects/stokvel/01-dashboard.png"
+                      alt="StokvelSA dashboard"
+                      loading="lazy"
+                    />
+                    <span class="project-shot-tag">CASE STUDY →</span>
+                  </button>
                   <div class="project-meta">
-                    <span>PROC_005</span><span>INDIVIDUAL · IN PROGRESS</span>
+                    <span>PROC_005</span><span>INDIVIDUAL · PRODUCT</span>
                   </div>
                   <h3>StokvelSA</h3>
                   <p>
-                    A stokvel management platform for member contributions,
-                    payment schedules, communication and financial insights for
-                    savings groups. Currently in development — documentation and
-                    walkthroughs land with the first release.
+                    A stokvel management platform for South African savings
+                    groups: contributions opened per period and confirmed as the
+                    money arrives, rotating payouts, meetings with minutes,
+                    notifications and compliance reporting. Role-based inside
+                    every group, with Supabase Auth and a Prisma/PostgreSQL
+                    ledger behind a layered Express API.
                   </p>
                   <div class="stack">
-                    WEB APP · DATABASE · FINANCIAL INSIGHTS
+                    REACT · EXPRESS · PRISMA · POSTGRESQL · SUPABASE
                   </div>
                   <div class="project-links">
                     <a
@@ -539,6 +554,9 @@
                       rel="noopener"
                       >repository →</a
                     >
+                    <button type="button" onclick="openGallery('stokvel')">
+                      screens →
+                    </button>
                   </div>
                 </article>
               </div>

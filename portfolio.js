@@ -211,7 +211,7 @@ const commands = {
   help: "help | about | projects | skills | contact | github | clear | date",
   about: "Phumudzo Manenzhe — BSc Computer Science student at Wits.",
   projects:
-    "Olympiad Portal [group] | OportuNet [group] | RepoScope [solo] | AI Snake Agent [solo] | StokvelSA [in progress]",
+    "Olympiad Portal [group] | OportuNet [group] | RepoScope [solo] | AI Snake Agent [solo] | StokvelSA [solo]",
   skills:
     "JavaScript, Python, Java, C++, C, SQL, HTML/CSS, React, Node.js, Express.js, Next.js, REST APIs, Git, Linux, databases, CI/CD.",
   contact: "manenzhephumudzo657@gmail.com | +27 68 313 9841",
@@ -351,6 +351,34 @@ const PROJECT_GALLERIES = {
         src: "assets/showcase/projects/snake/03-final-standings.png",
         caption:
           "Final standings — length, apples and eliminations per snake, replayed from the match trace the agent produced.",
+      },
+    ],
+  },
+  stokvel: {
+    title: "STOKVELSA",
+    subtitle:
+      "PROC_005 · individual · React · Express · Prisma · PostgreSQL · Supabase",
+    repo: "https://github.com/PhumudzoManenzhe/StokvelSA",
+    shots: [
+      {
+        src: "assets/showcase/projects/stokvel/01-dashboard.png",
+        caption:
+          "Dashboard — the signed-in member's groups, how many people they save with, and the cached South African prime rate, refreshed by a background job.",
+      },
+      {
+        src: "assets/showcase/projects/stokvel/02-groups.png",
+        caption:
+          "My stokvels — every circle the person belongs to, with their role inside it rather than one global account type.",
+      },
+      {
+        src: "assets/showcase/projects/stokvel/03-contributions.png",
+        caption:
+          "Contributions — a period is opened for every active member, then each payment is confirmed or marked missed; the tallies above the list are for the open month only.",
+      },
+      {
+        src: "assets/showcase/projects/stokvel/04-analytics.png",
+        caption:
+          "Analytics — compliance per member and the current period broken down, exported to CSV or PDF for the meeting.",
       },
     ],
   },
